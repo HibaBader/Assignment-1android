@@ -7,9 +7,9 @@ public class Movie {
 
 
     public Movie(String title, String typeOfMovie, String year) {
-        title = title;
-        typeOfMovie = typeOfMovie;
-        Year = year;
+        this.title = title;
+        this.typeOfMovie = typeOfMovie;
+        this.Year = year;
     }
 
     public String getTitle() {
@@ -17,7 +17,7 @@ public class Movie {
     }
 
     public void setTitle(String title) {
-        title = title;
+        this.title = title;
     }
 
     public String getType() {
@@ -25,7 +25,7 @@ public class Movie {
     }
 
     public void setType(String type) {
-        typeOfMovie = typeOfMovie;
+        this.typeOfMovie = typeOfMovie;
     }
 
     public String getYear() {
@@ -33,7 +33,7 @@ public class Movie {
     }
 
     public void setYear(String year) {
-        Year = year;
+        this.Year = year;
     }
 
     @Override

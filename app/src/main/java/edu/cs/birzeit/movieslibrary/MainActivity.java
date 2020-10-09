@@ -57,15 +57,19 @@ public class MainActivity extends AppCompatActivity {
         //List<Movie> movies=objMovie.getMoviesByType(name);
 
         for (Movie m:movies){
-            listOfmovies.add((Movie) objMovie.getMovies(name));
+           // listOfmovies.add((Movie) objMovie.getMovies(name));
+            if(m.getTitle().contains(name) || m.getYear().equals(name)){
+                str+=m.toString();
+
+            }
 
        }
 
 
-        for(Movie movie:listOfmovies){
-          str+=movie.toString();
+        //for(Movie movie:listOfmovies){
+        //  str+=movie.toString();
 
-        }
+       // }
         result.setText(str);
         //Toast.makeText(this,str, Toast.LENGTH_SHORT).show();
     }

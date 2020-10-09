@@ -4,7 +4,7 @@ package edu.cs.birzeit.movieslibrary.model;
 import java.util.ArrayList;
 import java.util.List;
 
- class MovieDa implements IMovieDa {
+class MovieDa implements IMovieDa {
 
     private ArrayList<Movie> movies = new ArrayList<>();
     public MovieDa(){
@@ -30,19 +30,19 @@ import java.util.List;
     }
 
 
-     public List<Movie> getMoviesByType(String type) {
-         ArrayList<Movie>data=new ArrayList<>();
-         for(Movie m:movies){
-             if(m.getType().equals(type)){
-                 data.add(m);
-             }
-         }
-         return data;
+    public List<Movie> getMoviesByType(String type) {
+        ArrayList<Movie>data=new ArrayList<>();
+        for(Movie m:movies){
+            if(m.getType().equals(type)){
+                data.add(m);
+            }
+        }
+        return data;
 
-     }
+    }
 
 
-     public String[] getTypes(){
+    public String[] getTypes(){
         String[] types=new String[]{"Action","Horror","Drama","Comedy"};
 
         return types;
@@ -50,4 +50,4 @@ import java.util.List;
     }
 
 
- }
+}
